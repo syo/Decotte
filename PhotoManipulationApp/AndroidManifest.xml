@@ -12,8 +12,9 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppBaseTheme" >
         <activity
+            android:screenOrientation="landscape"
             android:name="com.example.photomanipulationapp.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>

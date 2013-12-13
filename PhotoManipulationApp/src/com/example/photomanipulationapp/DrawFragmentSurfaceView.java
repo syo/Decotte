@@ -24,6 +24,15 @@ public class DrawFragmentSurfaceView extends SurfaceView implements Runnable,Sur
         setZOrderOnTop(true);
 		
 	}
+	
+	
+	//TODO コンストラクタが違う!!!!
+	public DrawFragmentSurfaceView() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
 
 	@Override
 	public void addCallback(Callback callback) {

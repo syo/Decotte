@@ -14,17 +14,11 @@
         
     </LinearLayout>
     
-    
-    <com.example.photomanipulationapp.fragment.FullScrollView
-        android:id="@+id/fullScrollView"
-        android:layout_toRightOf="@+id/drawmenulayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
             <com.example.photomanipulationapp.DrawFragmentSurfaceView
         android:id="@+id/drawSurFaceView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_below="@+id/drawmenulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         />
-            </com.example.photomanipulationapp.fragment.FullScrollView>
+            
 </RelativeLayout>

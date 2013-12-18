@@ -37,6 +37,7 @@ public class TopFragment extends Fragment{
 		args.putInt("index", index);
 		fragment.setArguments(args);
 		
+
 		return fragment;
 	}
 	

@@ -13,7 +13,6 @@ public class ChangeFragmentClass {
 	public static void changeDrawFragment(FragmentActivity activity,int resouceId,Long id) {
 	    // フラグメントのインスタンスを生成する。
 	    Fragment newFragment = DrawFragment.newInstance(2,id);
-	    
 	 
 	    // ActivityにFragmentを登録する。
 	    FragmentTransaction ft = activity.getSupportFragmentManager().beginTransaction();

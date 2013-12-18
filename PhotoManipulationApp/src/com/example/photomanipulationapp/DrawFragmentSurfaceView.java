@@ -4,12 +4,28 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
+import android.util.AttributeSet;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+
 public class DrawFragmentSurfaceView extends SurfaceView implements Runnable,SurfaceHolder,SurfaceHolder.Callback{
 
+	public  DrawFragmentSurfaceView(Context context, AttributeSet attrs){
+		super(context, attrs);
+		
+		// 半透明を設定
+        getHolder().setFormat(PixelFormat.TRANSLUCENT);
+        // コールバック登録
+        getHolder().addCallback(this);
+        // フォーカス可
+        setFocusable(true);
+        // このViewをトップにする
+        setZOrderOnTop(true);
+		
+	}
+	
 	public DrawFragmentSurfaceView(Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
@@ -122,10 +138,5 @@ public class DrawFragmentSurfaceView extends SurfaceView implements Runnable,Sur
 		// TODO Auto-generated method stub
 		
 	}
-	
-	
-	
-	
-	
 	
 }

@@ -1,26 +1,24 @@
 package com.example.photomanipulationapp.fragment;
 
-import java.util.ArrayList;
 
-import com.example.photomanipulationapp.ChangeFragmentClass;
-import com.example.photomanipulationapp.R;
+import java.util.ArrayList;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Loader;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+
+import com.example.photomanipulationapp.ChangeFragmentClass;
+import com.example.photomanipulationapp.R;
 
 public class TopFragment extends Fragment{
 	
@@ -38,10 +36,6 @@ public class TopFragment extends Fragment{
 		Bundle args = new Bundle();
 		args.putInt("index", index);
 		fragment.setArguments(args);
-		
-		
-		
-		
 		
 		return fragment;
 	}
@@ -68,7 +62,6 @@ public class TopFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		
 		
 		View view = inflater.inflate(R.layout.layout_fragment_top, container,false);
 		
@@ -113,10 +106,4 @@ public class TopFragment extends Fragment{
 		super.onSaveInstanceState(outState);
 		outState.putInt("data", mData);
 	}
-	
-	
-	
-	
-	
-
 }

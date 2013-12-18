@@ -2,29 +2,172 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     android:orientation="vertical" >
+    
     
     <LinearLayout
         android:id="@+id/drawmenulayout"
-        android:background="@android:color/darker_gray"
-        android:layout_width="30dp"
+        android:layout_width="80dp"
+        android:background="@drawable/popup_back"
         android:layout_height="match_parent"
         android:orientation="vertical"
          >
         
+       <ImageButton
+            android:id="@+id/changeColorButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/paint_button"
+            />
+       
+	<ImageButton
+           android:layout_width="match_parent"
+           android:layout_marginTop="5dp"
+           android:layout_height="50dp"
+           android:background="@null"
+           android:id="@+id/eraseButton"
+           android:src="@drawable/erase" />
+	
+	<ImageButton
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_height="50dp"
+	    android:background="@null"
+	    android:src="@drawable/stamp_logo"
+	    android:id="@+id/stampButton"
+	    />
+	
+	<ImageButton 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:src="@drawable/save_button_image"
+	    android:background="@null"
+	    android:id="@+id/saveButton"
+	    />
+       
+        
+        
     </LinearLayout>
-    
-    
-    <com.example.photomanipulationapp.fragment.FullScrollView
-        android:id="@+id/fullScrollView"
+    <FrameLayout
+        
+        android:id="@+id/drawFrameLayout"
         android:layout_toRightOf="@+id/drawmenulayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-            <com.example.photomanipulationapp.DrawFragmentSurfaceView
-        android:id="@+id/drawSurFaceView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-            </com.example.photomanipulationapp.fragment.FullScrollView>
+        android:layout_height="match_parent" >
+    </FrameLayout>
+    
+	
+       <ScrollView 
+        android:id="@+id/drawStampScroll"
+        android:layout_toRightOf="@+id/drawmenulayout"
+        android:background="@drawable/popup_back"
+        android:layout_width="80dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+           >
+	
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <ImageView
+                   android:id="@+id/stampImage0"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp0"
+                   />
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+               <ImageView
+                   android:id="@+id/stampImage1"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp1"/>
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+               <ImageView 
+                   android:id="@+id/stampImage2"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp2"/>
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+               <ImageView 
+                   android:id="@+id/stampImage3"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp3"/>
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+               <ImageView 
+                   android:id="@+id/stampImage4"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp4"/>
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+               <ImageView 
+                   android:id="@+id/stampImage5"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp5"/>
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+              <ImageView 
+                   android:id="@+id/stampImage6"
+                   android:clickable="true"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/stamp6"/>
+               
+               <View 
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@android:color/black"
+                   />
+               
+           </LinearLayout>
+       </ScrollView>
+	
+   
 </RelativeLayout>

@@ -21,16 +21,56 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int choice_image=0x7f020000;
+        public static final int choice_image_back=0x7f020001;
+        public static final int color0=0x7f020002;
+        public static final int color1=0x7f020003;
+        public static final int color10=0x7f020004;
+        public static final int color100=0x7f020005;
+        public static final int color11=0x7f020006;
+        public static final int color2=0x7f020007;
+        public static final int color3=0x7f020008;
+        public static final int color4=0x7f020009;
+        public static final int color5=0x7f02000a;
+        public static final int color6=0x7f02000b;
+        public static final int color7=0x7f02000c;
+        public static final int color8=0x7f02000d;
+        public static final int color9=0x7f02000e;
+        public static final int erase=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int paint_button=0x7f020011;
+        public static final int popup_back=0x7f020012;
+        public static final int popup_image=0x7f020013;
+        public static final int save_button_image=0x7f020014;
+        public static final int stamp0=0x7f020015;
+        public static final int stamp1=0x7f020016;
+        public static final int stamp2=0x7f020017;
+        public static final int stamp3=0x7f020018;
+        public static final int stamp4=0x7f020019;
+        public static final int stamp5=0x7f02001a;
+        public static final int stamp6=0x7f02001b;
+        public static final int stamp_button_image=0x7f02001c;
+        public static final int stamp_logo=0x7f02001d;
     }
     public static final class id {
-        public static final int action_settings=0x7f080006;
-        public static final int drawSurFaceView=0x7f080003;
+        public static final int action_settings=0x7f080011;
+        public static final int changeColorButton=0x7f080002;
+        public static final int drawFrameLayout=0x7f080006;
+        public static final int drawStampScroll=0x7f080007;
         public static final int drawmenulayout=0x7f080001;
-        public static final int fullScrollView=0x7f080002;
-        public static final int imageGridView=0x7f080004;
-        public static final int imageView=0x7f080005;
+        public static final int eraseButton=0x7f080003;
+        public static final int imageGridView=0x7f08000f;
+        public static final int imageView=0x7f080010;
         public static final int mainLayout=0x7f080000;
+        public static final int saveButton=0x7f080005;
+        public static final int stampButton=0x7f080004;
+        public static final int stampImage0=0x7f080008;
+        public static final int stampImage1=0x7f080009;
+        public static final int stampImage2=0x7f08000a;
+        public static final int stampImage3=0x7f08000b;
+        public static final int stampImage4=0x7f08000c;
+        public static final int stampImage5=0x7f08000d;
+        public static final int stampImage6=0x7f08000e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
